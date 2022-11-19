@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@color/bgColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE YOUR"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIFETIME"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:background="@color/textBgColor"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="in Minutes"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/dateBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth day"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:backgroundTint="@color/btnColor"
+            android:textSize="18sp"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/timeBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth Time"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/btnColor"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT DATE"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            />
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT TIME*"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculateBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/btnColor"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"/>
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/resultMinutesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MINUTES"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/equalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/resultInDaysTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/DayTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAYS"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="5dp"
+        />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
