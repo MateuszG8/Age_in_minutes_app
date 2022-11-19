@@ -57,12 +57,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun calculate() : Long {
+    private fun calculate(): Long {
         val currentTime = Calendar.getInstance()
         val birthTime = Calendar.getInstance()
-        birthTime.set(BirthYear,BirthMonth,BirthDay,BirthHour,BirthMinute)
-        val result = (currentTime.timeInMillis - birthTime.timeInMillis)/(1000 * 60)
-        return result
+        birthTime.set(BirthYear, BirthMonth, BirthDay, BirthHour, BirthMinute)
+        return (currentTime.timeInMillis - birthTime.timeInMillis) / (1000 * 60)
     }
 
     private fun timePicker() {
